@@ -1,32 +1,27 @@
 ### Twitter-Data-Analytics
 
-Computed the sentiment of Twitter tweets to get insights for Canadian Elections 2019. Data cleaning and EDA has been done to identify tweets relevant to specific parties. BOW, TF-IDF and N-grams used for model preparation. Logistic regression, KNN, SVM, Random forest classifiers were implemented for model results and predicting election outcomes.
+Computed the sentiment of Twitter tweets to gain insights into the Canadian 2019. Data cleaning and EDA were conducted to identify tweets relevant to specific parties. BOW, TF-IDF, and N-grams were used for model preparation. Logistic regression, KNN, SVM, and Random Forest classifiers were implemented for model results and predicting election outcomes.
 
+The purpose of this repository is to compute the sentiment of tweets posted recently about the Canadian Elections, gain insight into the Canadian Elections, and answer the research question What public opinion on Twitter tell about the Canadian political landscape in 2019?
 
-The purpose of this repo is to compute the sentiment of tweets posted recently on Canadian Elections, get insight into the Canadian Elections and answer the Research question： What can public opinion on Twitter tell us about the Canadian political landscape in 2019?
+### BACKGROUND:
 
-### BACKGROUND : 
+Sentiment Analysis is a branch of Natural Language Processing (NLP that allows to determine algorithmically a statement or document is “positive” or “negative.” It is a technology of increasing importance in modern society as it enables individuals and organizations to trends in public opinion by analyzing social media. Staying informed about socio-political is especially important during periods policy shifts such as election years when both electoral candidates and can benefit from sentiment analysis by appropriate changes to their campaigning and business strategies, respectively.
 
-Sentiment Analysis is a branch of Natural Language Processing (NLP) that allows us to determine algorithmically whether a statement or document is “positive” or “negative”. It's a technology of increasing importance in the modern society as it allows individuals and organizations to detect trends in public opinion by analyzing social media content. Keeping abreast of socio-political developments is especially important during periods of policy shifts such as election years, when both electoral candidates and companies can benefit from sentiment analysis by making appropriate changes to their campaigning and business strategies respectively. 
+### REQUIREMENTS:
 
-### REQUIREMENT :
+Numpy, Scipy, Scikit, Matplotlib, Pandas, NLTK.
 
-Numpy, Scipy, Scikit, Matplotlib, Pandas, NLTK. 
-
-### APPROACH :
+### APPROACH:
 
 Data cleaning: Design a procedure that prepares the Twitter data for analysis
 
-Remove all html tags and attributes (i.e., /<[^>]+>/)
-Replace Html character codes (i.e., &...;) with an ASCII equivalent
+Remove all HTML tags and (i.e., /<[^>]+>/)
+Replace HTML character codes (i.e., &...;) with ASCII equivalent
 Remove all URLs
-Remove all characters in the text are in lowercase
-Remove all stop words are removed
-Preserve empty tweet after pre-processing 
+ all in the text to lowercase
+Remove all stop wordsPreserve empty tweets after pre-processing
 
-Exploratory data analysis: determine political party of given tweet using Bag of words, TF-IDF, N-grams
+Exploratory analysis: determine the political party of a given tweet Bag of Words, TF-IDF, N-grams
 
-Model preparation: multiple classification algorithms for generic tweets (logistic regression, k-NN, Naive Bayes, SVM, decision trees)
-
-Train classification model to predict the sentiment value (positive or negative)
-Train multi-class classification models to predict the reason for the negative tweets. 
+Model preparation: multiple algorithms for generic tweets (logistic regression,-NN, Naive Bayes, SVM,
